@@ -35,4 +35,6 @@
 ---------------
 ### 前期講座
 1. 05/07 - [概要説明](http://www.slideshare.net/ww24jp/01-20712134)
-1. 05/14 - [HTML 基礎Ⅰ](http://www.slideshare.net/ww24jp/02-21152799)
+1. 05/14 - [HTML 基礎Ⅰ](http://www.slideshare.net/ww24jp/02-21152799),
+           [課題 HTML/01](HTML/01)
+1. 05/21 - HTML 基礎Ⅱ
