@@ -12,7 +12,7 @@ HTML5 の正しい書き方を身に付ける。
 
 条件
 ----
-* ファイルは、用意された [index.html](index.html) のみを用いること
+* ファイルは、用意された [`index.html`](index.html) のみを用いること
 * CSS や JavaScript は用いないこと
 * ブラウザには [Google Chrome](http://www.google.co.jp/intl/ja/chrome/browser/) を用いること
 * HTML タグは何を使っても良い
@@ -20,3 +20,7 @@ HTML5 の正しい書き方を身に付ける。
 提出先
 -----
 Google Drive の所定の共有フォルダ (自分の学籍番号のフォルダ)
+
+模範解答
+-------
+[`answer.html`](answer.html)
