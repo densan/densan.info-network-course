@@ -17,6 +17,7 @@ CSS の使い方を覚える。
 * 要素型セレクタ, class セレクタ, id セレクタ全てを使うこと
 * できれば、子孫セレクタ, 子セレクタも使う
 * スライド中で紹介しなかったセレクタを使っても良い
+* 難しい場合は、 [`example.css`](example.css) を参考にしても良い
 
 例
 ----
@@ -25,6 +26,10 @@ CSS の使い方を覚える。
 * footer の文字サイズを指定する
 * div#wrapper の文字色を指定する
 
+参考 URL
+----
+* [スタイルシート CSS ［スタイルシートのカテゴリー一覧］ - TAG index Webサイト](http://www.tagindex.com/stylesheet/)
+* [ASCII.jp CSSリファレンス : CSS 2.0/2.1/3.0 - CSSの仕様とリファレンス情報](http://reference.ascii.jp/css/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8)
 
 提出先
 -----
