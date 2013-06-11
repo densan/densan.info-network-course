@@ -7,7 +7,8 @@ CSS の使い方を覚える。
 
 内容
 ----
-`index.html` というファイル名の HTML ファイルに対して `style.css` という CSS ファイルを作成し、見栄えを整える。
+`index.html` というファイル名の HTML ファイルに対して `style.css` という CSS ファイルを作成し、見栄えを整える。  
+`style.css` だけを提出する。
 
 条件
 ----
