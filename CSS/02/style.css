@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+/* 要素型セレクタ */
+article {
+  margin: 10px 0;
+  border-bottom: 1px dotted #000;
+}
+
+/* 属性セレクタ */
+input[require] {
+  border-style: solid;
+  border-color: #f00;
+}
+
+a[href$=".pdf"] {
+  background-color: #e88;
+}
+
+
+/* 隣接セレクタ */
+.h1p h1 + p {
+  color: #e55;
+}
+
+.lili li + li {
+  border-top: 1px solid #000;
+}
+
+
+/* 間接セレクタ */
+.h1p- h1 ~ p {
+  color: #e55;
+}
+
+
+/* 擬似クラス */
+.link {
+  font-size: 16px;
+  line-height: 20px;
+}
+.link:hover {
+  font-size: 18px;
+}
+
+.radio-typeA:checked + span {
+  color: rgb(100, 100, 255);
+  font-weight: bold;
+}
+
+.nth-c > p:nth-child(3) {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+}
+.nth-o > p:nth-of-type(3) {
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.f-line:first-line {
+  color: green;
+}
+
+.f-letter:first-letter {
+  font-size: 2.5em;
+}
+
+/* 擬似要素 */
+a[href^="http://"]:before,
+a[href^="https://"]:before,
+a[href^="://"]:before {
+  content: "[外部リンク] ";
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>CSS の活用</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>CSS の活用</h1>
+    </header>
+    <section class="canvas">
+      <article>
+        <h2>属性セレクタ</h2>
+        <h3>入力必須項目に色を付ける</h3>
+        <p>
+          <label for="user">User Name: </label>
+          <input id="user" type="text" require>
+        </p>
+        <p>
+          <label for="nn">Nickname: </label>
+          <input id="nn" type="text">
+        </p>
+        
+        <h3>PDF ファイルへのリンクに背景色を指定する</h3>
+        <p>
+          <a href="test.pdf">実際には存在しないファイルでも色が付く</a>
+          <br>
+          <a href="test.html">.html には色が付かない</a>
+        </p>
+      </article>
+      <article>
+        <h2>隣接セレクタ</h2>
+        <h3>h1 + p</h3>
+        <div class="h1p">
+          <p>h1 の直前の p 要素</p>
+          <h1>h1 要素</h1>
+          <p>隣接している p 要素 (h1 の弟要素)</p>
+          <p>隣接していない p 要素</p>
+        </div>
+        
+        <h3>li + li</h3>
+        <div class="lili">
+          <ul>
+            <li>リスト項目1</li>
+            <li>リスト項目2</li>
+            <li>リスト項目3</li>
+          </ul>
+        </div>
+      </article>
+      <article>
+        <h2>間接セレクタ</h2>
+        <h3>h1 ~ p</h3>
+        <div class="h1p-">
+          <p>h1 の直前の p 要素</p>
+          <h1>h1 要素</h1>
+          <p>隣接している p 要素 (h1 の弟要素)</p>
+          <p>隣接していない p 要素</p>
+        </div>
+      </article>
+      <article>
+        <h2>擬似クラス</h2>
+        <h3>:hover</h3>
+        <a class="link" href="#">リンク</a>
+        
+        <h3>:checked</h3>
+        <label>
+          <input class="radio-typeA" type="radio" name="radioA" value="html">
+          <span>HTML</span>
+        </label>
+        <br>
+        <label>
+          <input class="radio-typeA" type="radio" name="radioA" value="css">
+          <span>CSS</span>
+        </label>
+        <br>
+        <label>
+          <input class="radio-typeA" type="radio" name="radioA" value="js">
+          <span>JS</span>
+        </label>
+        
+        <h3>:nth-child(n)</h3>
+        <div class="nth-c">
+          <p>1番目 p</p>
+          <div>2番目 div</div>
+          <p>3番目 p</p>
+          <p>4番目 p</p>
+        </div>
+        
+        <h3>:nth-of-type(n)</h3>
+        <div class="nth-o">
+          <p>1番目 p</p>
+          <div>2番目 div</div>
+          <p>3番目 p</p>
+          <p>4番目 p</p>
+        </div>
+        
+        <h3>:first-line</h3>
+        <p class="f-line">
+          最初の行だけ色が変わる。
+          <br>
+          2行目以降には適用されない。
+          <br>
+          3行目。
+        </p>
+        
+        <h3>:first-letter</h3>
+        <p class="f-letter">最初の文字だけ大きく表示。</p>
+      </article>
+      <article>
+        <h2>擬似要素</h2>
+        <h3>外部リンク</h3>
+        <p>
+          <a href="test.jpg">test.jpg</a>
+          <br>
+          <a href="https://www.google.co.jp/">https://www.google.co.jp/</a>
+          <br>
+          <a href="http://www.yahoo.co.jp/">http://www.yahoo.co.jp/</a>
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>&copy; team DENSAN NET</p>
+    </footer>
+  </div>
+</body>
+</html>
