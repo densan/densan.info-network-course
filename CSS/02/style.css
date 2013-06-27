@@ -65,6 +65,6 @@ a[href$=".pdf"] {
 /* 擬似要素 */
 a[href^="http://"]:before,
 a[href^="https://"]:before,
-a[href^="://"]:before {
+a[href^="//"]:before {
   content: "[外部リンク] ";
 }
