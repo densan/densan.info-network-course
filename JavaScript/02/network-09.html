@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="script.js"></script>
+  <title>JavaScript 2</title>
+</head>
+<body>
+  <!-- HTML ソースの変更はしないこと -->
+  <h1>JavaScript 2</h1>
+  <p>script.js を編集して提出する。</p>
+  <h2>問1: Object の列挙</h2>
+  <p id="sbj1"></p>
+  <h2>問2: 無名関数と変数スコープの応用</h2>
+  <p id="sbj2"></p>
+  <h2>問3: 制御構文の応用</h2>
+  <p id="sbj3"></p>
+  
+  <script>
+    /* ==== この部分は変更しない ==== */
+    window.addEventListener("load", function () {
+      var sbjs = [
+        document.getElementById("sbj1"),
+        document.getElementById("sbj2"),
+        document.getElementById("sbj3")
+      ];
+      
+      // check sbj: 1
+      Object.prototype.test = function () {
+        return showObject(this) === 4 ? "正しい" : "誤り";
+      };
+      sbjs[0].innerText = "返り値チェック: " +
+        ({
+          spring: "桜",
+          summer: "海",
+          autumn: "紅葉",
+          winter: "雪"
+        }).test();
+      
+      // check sbj: 2
+      var f = makeCountUp(),
+          check = 0;
+      for (var i = 0; i < 100; i++)
+        check += f() !== i;
+      sbjs[1].innerText = "実行チェック: " + (check || f() !== 100 ? "不正解" : "正解");
+      
+      // check sbj: 3
+      var testArr = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987],
+          correct = [0, 2, 8, 34, 144, 610],
+          checkArr = getEvenArray(testArr);
+      sbjs[2].innerText = "実行チェック: " +
+        (checkArr && checkArr.join && checkArr.join("-") === correct.join("-") ? "正解" : "不正解");
+    });
+    
+    // hint
+    function getHint(index) {
+      return "問題" + index　+ "のヒント: " + [
+        "for in と hasOwnProperty メソッドを用いる。",
+        "引数は用いず、変数もこれ以上増やす必要はない。",
+        "偶数だけを入れるための新しい配列を用意する + 配列の push メソッドを用いる。"
+      ][index - 1];
+    }
+  </script>
+</body>
+</html>
