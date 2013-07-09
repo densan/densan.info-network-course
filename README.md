@@ -45,3 +45,4 @@
 1. 06/18 - 臨時休講
 1. 06/25 - [CSS 基礎Ⅱ](http://www.slideshare.net/ww24jp/07-23447315), [参考 CSS/02](CSS/02)
 1. 07/02 - [JS 基礎Ⅰ](http://www.slideshare.net/ww24jp/08-23773748), [課題 JS/01](JavaScript/01)
+1. 07/09 - [JS 基礎Ⅱ](http://www.slideshare.net/ww24jp/09-24046140)
