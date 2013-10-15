@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>socket.io</title>
+</head>
+<body>
+  <input type="text" id="message">
+  <button id="send">送信</button>
+  <br>
+  <textarea id="log" style="width:300px;height:500px" readonly></textarea>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+  onload = function () {
+    var $msg = document.getElementById("message");
+    var $log = document.getElementById("log");
+    var $send = document.getElementById("send");
+
+    $send.addEventListener("click", function () {
+      var message = $msg.value;
+      if (message) {
+        socket.emit("msg", message);
+        $log.value = message + "\n" + $log.value;
+        $msg.value = "";
+      }
+    });
+
+    var socket = io.connect();
+    socket.on("connect", function () {
+      socket.on("chat", function (data) {
+        console.log(data);
+        $log.value = data + "\n" + $log.value;
+      });
+    });
+  };
+  </script>
+</body>
+</html>
