@@ -1,0 +1,10 @@
+{
+  "name": "web-scraping",
+  "version": "1.0.0",
+  "dependencies": {
+    "jschardet": "~1.1.0",
+    "cheerio": "~0.12.3",
+    "request": "~2.27.0",
+    "iconv": "~2.0.7"
+  }
+}

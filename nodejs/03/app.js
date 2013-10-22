@@ -5,6 +5,8 @@
 
 var request = require("request"),
     cheerio = require("cheerio"),
+    Iconv = require("iconv").Iconv,
+    jschardet = require("jschardet"),
     url = require("url");
 
 process.stdout.write("認証情報を入力 > ");
@@ -35,11 +37,18 @@ function main(auth) {
     });
   }
 
-  request.get("https://github.com/ww24/densan.info-network-course", {
-    proxy: proxy
+  request.get("http://www.hit.ac.jp/gakusei", {
+    proxy: proxy,
+    encoding: null
   }, function (err, res, body) {
     if (err)
       console.error(err);
+
+    var encoding = jschardet.detect(body).encoding;
+    if (encoding !== "ascii" && encoding !== "utf-8") {
+      var iconv = new Iconv(encoding, "UTF-8//TRANSLIT//IGNORE");
+      body = iconv.convert(body);
+    }
 
     var $ = cheerio.load(body);
     var pageTitle = $("title").text();
