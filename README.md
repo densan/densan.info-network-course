@@ -49,4 +49,5 @@
 
 ### 後期講座
 1. 10/08 - [Node.js Ⅰ](http://www.slideshare.net/ww24jp/01-27196986), [サンプルコード](nodejs/01)
-
+1. 10/15 - Node.js Ⅱ
+1. 10/22 - [Node.js Ⅲ](http://www.slideshare.net/ww24jp/03-27441078), [サンプルコード](nodejs/03)
