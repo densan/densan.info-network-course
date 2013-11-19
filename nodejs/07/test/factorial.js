@@ -1,7 +1,11 @@
 // factorial.js
 
-var expect = require("chai").expect,
-    factorial = require("../factorial");
+if (typeof window === "object") {
+  var expect = chai.expect;
+} else {
+  var expect = require("chai").expect;
+  var factorial = require("../factorial");
+}
 
 describe("factorial", function () {
   it("argument: 0", function () {
