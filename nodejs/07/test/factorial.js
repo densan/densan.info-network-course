@@ -1,16 +1,7 @@
 // factorial.js
 
-var expect = require("chai").expect;
-
-function factorial(n) {
-  if (typeof n !== "number")
-    throw new TypeError("n must be a natural number");
-  if (n < 0)
-    throw new RangeError("n must be a natural number");
-
-  if (n <= 1) return 1;
-  return n * arguments.callee(n - 1);
-}
+var expect = require("chai").expect,
+    factorial = require("../factorial");
 
 describe("factorial", function () {
   it("argument: 0", function () {
