@@ -53,3 +53,4 @@
 1. 10/22 - [Node.js Ⅲ](http://www.slideshare.net/ww24jp/03-27441078), [サンプルコード](nodejs/03)
 1. 10/29 - Node.js Ⅳ
 1. 11/05 - [Node.js Ⅴ](http://www.slideshare.net/ww24jp/05-27915628), [サンプルコード](nodejs/05)
+1. 11/19 - [Node.js Ⅶ](http://www.slideshare.net/ww24jp/07-28401527), [サンプルコード](nodejs/07)
