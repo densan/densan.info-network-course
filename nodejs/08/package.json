@@ -1,0 +1,16 @@
+{
+  "name": "08",
+  "version": "0.0.0",
+  "description": "code coverage tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "mocha": "~1.14.0",
+    "istanbul": "~0.1.45",
+    "chai": "~1.8.1"
+  }
+}
